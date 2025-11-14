@@ -1,0 +1,13 @@
+[aria-label] {
+  background-color: red;
+  display: inline-block;
+  padding: 1rem;
+  color: #fff;
+}
+
+.isOdd {
+  background-color: #fc56cc;
+}
+
+
+

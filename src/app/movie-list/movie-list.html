@@ -1,0 +1,10 @@
+<button (click)="toggleList()" [attr.type]="'button'">Show movies</button>
+@if(showList) {
+<ul>
+  @for(movie of movies; track movie.id; let variable = $index) {
+    <app-movie-item [movie]="movie"/>
+  }
+</ul>
+} @else {
+  <div>No movies</div>
+}

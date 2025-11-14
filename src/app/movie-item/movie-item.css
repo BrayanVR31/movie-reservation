@@ -1,0 +1,12 @@
+.movie {
+  background-color: #0f0f06;
+  color: #ddd;
+  margin: 10px 0;
+}
+
+.card {
+  padding: 10px 15px;
+  min-height: 250px;
+  max-width: 150px;
+  border-radius: 7px;
+}
