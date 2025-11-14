@@ -1,6 +1,11 @@
 export interface Movie {
   id: number;
   title: string;
-  description: string;
-  year: number;
+  coverImage: string;
+  ageRating: string;
+  duration: number;
+  releaseDate: Date | string;
+  isPreSale: boolean;
+  description?: string;
+  year?: number;
 }

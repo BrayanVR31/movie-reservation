@@ -1,10 +1,9 @@
-<button (click)="toggleList()" [attr.type]="'button'">Show movies</button>
-@if(showList) {
-<ul>
-  @for(movie of movies; track movie.id; let variable = $index) {
-    <app-movie-item [movie]="movie"/>
+<ul [class]="currentClasses">
+  @for(movie of movies; track movie.id) {
+    <li>
+      <img [src]="movie.coverImage" [width]="'120'"/>
+      <p>{{movie.title}}</p>
+      <p>{{movie.ageRating}}</p>
+    </li>
   }
 </ul>
-} @else {
-  <div>No movies</div>
-}
